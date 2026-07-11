@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3DSPARK &#8211; Stampa 3D Artigianale di Qualit&#224;</title>
+  <meta name="description" content="3DSPARK crea oggetti unici in stampa 3D: Funko Pop in PLA Wood, lampade lithophane, smart card NFC, portachiavi personalizzati. Made in Italy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="cursor" class="cursor"></div>
+<div id="cursor-follower" class="cursor-follower"></div>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav id="navbar" class="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo-link">
+      <div class="logo-wrap">
+        <img src="LOOG.jpeg" alt="3DSPARK" class="logo-img" />
+      </div>
+      <span class="logo-text">3D<span class="logo-spark">SPARK</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-item">Chi Siamo</a></li>
+      <li><a href="#products" class="nav-item">Prodotti</a></li>
+      <li><a href="#process" class="nav-item">Processo</a></li>
+      <li><a href="#contact" class="nav-item">Contatti</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Richiedi Ora</a>
+    <button class="cart-btn" id="cart-btn" aria-label="Carrello">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+      <span class="cart-badge" id="cart-badge">0</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="#about" class="mob-link">Chi Siamo</a></li>
+    <li><a href="#products" class="mob-link">Prodotti</a></li>
+    <li><a href="#process" class="mob-link">Processo</a></li>
+    <li><a href="#contact" class="mob-link">Contatti</a></li>
+  </ul>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero" class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-particles" id="hero-particles"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span>Stampa 3D Artigianale &#8212; Made in Italy</div>
+    <h1 class="hero-title">Dall&#8217;idea<br /><span class="hero-accent">all&#8217;oggetto.</span></h1>
+    <p class="hero-sub">Creiamo oggetti unici in stampa 3D: Funko Pop in PLA Wood, lampade lithophane, smart card NFC e molto altro. Ogni pezzo realizzato con cura, strato dopo strato.</p>
+    <div class="hero-actions">
+      <a href="#products" class="btn-primary"><span>Esplora i prodotti</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#contact" class="btn-ghost">Richiedi preventivo</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Made in Italy</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">PLA</span><span class="stat-label">Materiali premium</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">&#8734;</span><span class="stat-label">Personalizzazioni</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-img-frame">
+      <img src="extracted/3D_printed_Funko_Pop_figure_202607111258.jpeg" alt="Funko Pop 3D in PLA Wood" class="hero-img" />
+      <div class="hero-img-glow"></div>
+    </div>
+    <div class="hero-floating-badge badge-tr">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>PLA Wood
+    </div>
+    <div class="hero-floating-badge badge-bl">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Consegna rapida
+    </div>
+  </div>
+  <div class="hero-scroll-hint"><div class="scroll-line"></div><span>scroll</span></div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" class="about section-padding">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left reveal">
+        <div class="section-label">Chi siamo</div>
+        <h2 class="section-title">La passione<br />diventa oggetto</h2>
+        <p class="about-text"><strong>3DSPARK</strong> nasce dalla passione per la tecnologia e il design. Utilizziamo stampanti 3D di ultima generazione per trasformare le tue idee in oggetti fisici unici, personalizzati e di alta qualit&#224;.</p>
+        <p class="about-text">Ogni prodotto viene realizzato artigianalmente con materiali selezionati &#8212; dal PLA standard al PLA Wood che dona un caratteristico effetto legno naturale.</p>
+        <div class="about-chips">
+          <span class="chip">PLA Wood</span>
+          <span class="chip">Bamboo</span>
+          <span class="chip">PLA Standard</span>
+          <span class="chip">PETG</span>
+          <span class="chip">Resina</span>
+        </div>
+      </div>
+      <div class="about-right reveal">
+        <div class="about-img-mosaic">
+          <div class="mosaic-img mosaic-a"><img src="extracted/3D_printed_Groot_figure_wood_202607111258.jpeg" alt="Groot PLA Wood" /></div>
+          <div class="mosaic-img mosaic-b"><img src="extracted/3D_printed_astronaut_figure_bamboo_202607111258.jpeg" alt="Astronauta bamboo" /></div>
+          <div class="mosaic-img mosaic-c"><img src="extracted/Funko_Pop_Batman_wood_figure_202607111258.jpeg" alt="Batman Funko Pop" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DISCLAIMER ═══ -->
+<div class="disclaimer-banner">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+  <p><strong>Nota:</strong> Le immagini presenti sul sito sono a scopo illustrativo. Il risultato finale pu&#242; variare in base al modello, al materiale e alle personalizzazioni richieste.</p>
+</div>
+
+<!-- ═══ PRODUCTS ═══ -->
+<section id="products" class="products section-padding">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Catalogo</div>
+      <h2 class="section-title">I nostri prodotti</h2>
+      <p class="section-sub">Clicca su ogni prodotto per vedere info, materiale e prezzi.</p>
+    </div>
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="figure">Figure &amp; Funko</button>
+      <button class="filter-btn" data-filter="lampade">Lampade</button>
+      <button class="filter-btn" data-filter="card">Smart Card NFC</button>
+      <button class="filter-btn" data-filter="portachiavi">Portachiavi</button>
+      <button class="filter-btn" data-filter="custom">Custom</button>
+      <button class="filter-btn" data-filter="all">Tutti</button>
+    </div>
+    <div class="products-grid" id="products-grid"></div>
+  </div>
+</section>
+
+<!-- ═══ PROMO SMART CARD / PORTACHIAVI ═══ -->
+<section class="promo-section section-padding">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Offerte speciali</div>
+      <h2 class="section-title">Promo Smart Card &amp; Portachiavi</h2>
+      <p class="section-sub">Ordina di pi&#249; e risparmia. Mix di modelli consentito.</p>
+    </div>
+    <div class="promo-grid">
+      <div class="promo-card reveal">
+        <div class="promo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div>
+        <div class="promo-qty">1 pezzo</div>
+        <div class="promo-price">5,99 &#8364;</div>
+        <div class="promo-label">Prezzo unitario</div>
+      </div>
+      <div class="promo-card promo-featured reveal">
+        <div class="promo-best">Popolare</div>
+        <div class="promo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div>
+        <div class="promo-qty">3 pezzi</div>
+        <div class="promo-price">14,99 &#8364;</div>
+        <div class="promo-label">Risparmi 2,98 &#8364;</div>
+        <div class="promo-saving">&#8722;17%</div>
+      </div>
+      <div class="promo-card promo-top reveal">
+        <div class="promo-best">Miglior valore</div>
+        <div class="promo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div>
+        <div class="promo-qty">5 pezzi</div>
+        <div class="promo-price">22,99 &#8364;</div>
+        <div class="promo-label">Risparmi 6,96 &#8364;</div>
+        <div class="promo-saving">&#8722;23%</div>
+      </div>
+    </div>
+    <p class="promo-note">*Valido per Smart Card NFC e Portachiavi. Mix di modelli disponibile. Contattaci per ordini superiori a 5 pezzi.</p>
+  </div>
+</section>
+
+<!-- ═══ FUNKO SPOTLIGHT ═══ -->
+<section class="funko-spotlight section-padding">
+  <div class="container">
+    <div class="spotlight-inner">
+      <div class="spotlight-text reveal">
+        <div class="section-label">In evidenza</div>
+        <h2 class="section-title">Funko Pop<br /><span class="accent-line">in PLA Wood</span></h2>
+        <p class="spotlight-desc">I nostri Funko Pop sono realizzati <strong>interamente in PLA Wood</strong> &#8212; un filamento composito che mescola PLA e fibre di legno naturale. Il risultato &#232; una superficie calda con venature uniche che rende ogni pezzo diverso dall&#8217;altro.</p>
+        <ul class="spotlight-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Materiale: <strong>100% PLA Wood</strong></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Effetto legno naturale con venature uniche</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Qualsiasi personaggio su richiesta</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Ogni pezzo &#232; un esemplare unico</li>
+        </ul>
+        <div class="funko-pricing reveal">
+          <div class="funko-price-card">
+            <span class="fp-size">16 &#215; 16 cm</span>
+            <span class="fp-price">15,99 &#8364;</span>
+          </div>
+          <div class="funko-price-divider"></div>
+          <div class="funko-price-card funko-price-big">
+            <span class="fp-badge">MAX</span>
+            <span class="fp-size">25 &#215; 25 cm</span>
+            <span class="fp-price">20,99 &#8364;</span>
+          </div>
+        </div>
+        <a href="#products" class="btn-primary" onclick="document.querySelector('[data-filter=figure]').click()"><span>Vedi tutti i modelli</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="spotlight-imgs reveal">
+        <div class="spotlight-img-main"><img src="extracted/Funko_Pop_Batman_wood_figure_202607111258.jpeg" alt="Funko Pop Batman PLA Wood" /></div>
+        <div class="spotlight-img-grid">
+          <img src="extracted/3D_printed_Funko_Pop_figure_202607111258_2.jpeg" alt="Funko Pop" />
+          <img src="extracted/3D_printed_Spider-Man_Funko_Pop_202607111258.jpeg" alt="Spider-Man" />
+          <img src="extracted/Funko_Pop_detective_wood_figure_202607111258.jpeg" alt="Detective" />
+          <img src="extracted/3D_printed_Funko_Pop_figure_202607111258.jpeg" alt="Vintage" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROCESS ═══ -->
+<section id="process" class="process section-padding">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Come funziona</div>
+      <h2 class="section-title">Dal concept al prodotto</h2>
+      <p class="section-sub">Tre semplici passi per avere il tuo oggetto unico.</p>
+    </div>
+    <div class="process-steps">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <h3 class="step-title">Contattaci</h3>
+        <p class="step-desc">Descrivi il tuo progetto o invia un file. Risponderemo entro 24h con consulenza gratuita.</p>
+      </div>
+      <div class="step-connector"><svg viewBox="0 0 60 24" fill="none"><path d="M0 12h55M45 2l12 10-12 10" stroke="currentColor" stroke-width="1.5"/></svg></div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3 class="step-title">Progettiamo</h3>
+        <p class="step-desc">Prepariamo il modello 3D o adattiamo il tuo file. Ti inviamo un&#8217;anteprima prima di procedere.</p>
+      </div>
+      <div class="step-connector"><svg viewBox="0 0 60 24" fill="none"><path d="M0 12h55M45 2l12 10-12 10" stroke="currentColor" stroke-width="1.5"/></svg></div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12l5 5L20 7"/><circle cx="12" cy="12" r="10"/></svg></div>
+        <h3 class="step-title">Ricevi il tuo pezzo</h3>
+        <p class="step-desc">Stampiamo, controlliamo la qualit&#224; e spediamo. Il tuo oggetto unico arriva a casa tua.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="contact section-padding">
+  <div class="container">
+    <div class="contact-wrapper reveal">
+      <div class="contact-left">
+        <div class="section-label">Contatti</div>
+        <h2 class="section-title">Inizia il tuo<br />progetto</h2>
+        <p class="contact-desc">Hai un&#8217;idea? Vuoi un preventivo? La consulenza iniziale &#232; sempre gratuita.</p>
+        <div class="contact-info">
+          <a href="https://instagram.com/3dspark" target="_blank" class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+            <div><span class="contact-label">Instagram</span><span class="contact-val">@3dspark</span></div>
+          </a>
+          <a href="mailto:info@3dspark.it" class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><span class="contact-label">Email</span><span class="contact-val">info@3dspark.it</span></div>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form" onsubmit="handleForm(event)">
+        <div class="form-row">
+          <div class="form-group"><label for="fname">Nome</label><input type="text" id="fname" name="name" placeholder="Il tuo nome" required /></div>
+          <div class="form-group"><label for="femail">Email</label><input type="email" id="femail" name="email" placeholder="tua@email.com" required /></div>
+        </div>
+        <div class="form-group">
+          <label for="fproduct">Prodotto di interesse</label>
+          <select id="fproduct" name="product">
+            <option value="">Seleziona...</option>
+            <option>Funko Pop (16&#215;16 cm) &#8211; 15,99 &#8364;</option>
+            <option>Funko Pop (25&#215;25 cm) &#8211; 20,99 &#8364;</option>
+            <option>Figura 3D personalizzata</option>
+            <option>Lampada Lithophane &#8211; 19,99 &#8364;</option>
+            <option>Smart Card NFC &#8211; 5,99 &#8364;</option>
+            <option>Portachiavi &#8211; 5,99 &#8364;</option>
+            <option>Promo 3 pz &#8211; 14,99 &#8364;</option>
+            <option>Promo 5 pz &#8211; 22,99 &#8364;</option>
+            <option>Stampa custom (preventivo)</option>
+            <option>Altro</option>
+          </select>
+        </div>
+        <div class="form-group"><label for="fmessage">Messaggio</label><textarea id="fmessage" name="message" rows="4" placeholder="Descrivi il tuo progetto, dimensioni, colori, quantit&#224;..." required></textarea></div>
+        <button type="submit" class="btn-primary form-submit" id="form-submit">
+          <span id="submit-text">Invia richiesta</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+        <p class="form-disclaimer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>Le immagini sono a scopo illustrativo. Il risultato pu&#242; variare.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="LOOG.jpeg" alt="3DSPARK" class="footer-logo" />
+        </div>
+        <span class="footer-name">3D<span style="color:var(--accent-warm)">SPARK</span></span>
+        <p class="footer-tagline">Stampa 3D artigianale italiana</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Navigazione</p>
+        <div class="footer-links">
+          <a href="#about">Chi Siamo</a>
+          <a href="#products">Prodotti</a>
+          <a href="#process">Come funziona</a>
+          <a href="#contact">Contatti</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Informazioni legali</p>
+        <div class="footer-links">
+          <a href="resi.html">Resi e Rimborsi</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="termini.html">Termini di Servizio</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Seguici</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/3dspark" target="_blank" aria-label="Instagram" class="social-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            @3dspark
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&#169; 2025 3DSPARK. Tutti i diritti riservati.</p>
+      <p class="footer-disclaimer">Le immagini sono a scopo illustrativo. Il risultato finale pu&#242; variare.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ PRODUCT MODAL ═══ -->
+<div class="modal-overlay" id="modal-overlay"></div>
+<div class="product-modal" id="product-modal" role="dialog" aria-modal="true">
+  <button class="modal-close" id="modal-close" aria-label="Chiudi">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <div class="modal-inner">
+    <div class="modal-left">
+      <div class="modal-img-wrap">
+        <img id="modal-img" src="" alt="" class="modal-main-img" />
+      </div>
+      <div class="modal-thumbs" id="modal-thumbs"></div>
+    </div>
+    <div class="modal-right">
+      <span id="modal-badge" class="modal-badge"></span>
+      <h2 id="modal-title" class="modal-title"></h2>
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" data-tab="info">Descrizione</button>
+        <button class="modal-tab-btn" data-tab="material">Materiale</button>
+        <button class="modal-tab-btn" data-tab="options">Acquista</button>
+      </div>
+      <div class="modal-tab-content">
+        <div class="tab-panel active" id="tab-info"></div>
+        <div class="tab-panel" id="tab-material"></div>
+        <div class="tab-panel" id="tab-options">
+          <div id="dynamic-options-container"></div>
+          <div class="modal-cta" id="modal-cta"></div>
+        </div>
+      </div>
+      <p class="modal-disclaimer">&#9432; Immagini a scopo illustrativo. Il risultato finale pu&#242; variare.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ CART SIDEBAR ═══ -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<div class="cart-sidebar" id="cart-sidebar">
+  <div class="cart-header">
+    <h2 class="cart-title">Il tuo carrello</h2>
+    <button class="cart-close" id="cart-close" aria-label="Chiudi carrello"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+  </div>
+  <div class="cart-items" id="cart-items">
+    <!-- Inserted via JS -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Totale</span>
+      <span id="cart-total">0,00 &#8364;</span>
+    </div>
+    <a href="pagamento.html" class="btn-primary cart-checkout-btn">Vai al Checkout <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

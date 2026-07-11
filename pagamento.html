@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout &#8211; 3DSPARK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { background: var(--off-white); }
+    .checkout-page { padding: 120px 24px 80px; max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 400px; gap: 40px; }
+    .checkout-title { font-family: var(--font-display); font-size: 32px; font-weight: 800; color: var(--black); margin-bottom: 32px; letter-spacing: -0.02em; }
+    
+    .checkout-form { background: var(--white); padding: 40px; border-radius: 24px; box-shadow: var(--shadow); }
+    .form-section-title { font-size: 18px; font-weight: 700; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--gray-100); }
+    
+    .order-summary { background: var(--white); padding: 40px; border-radius: 24px; box-shadow: var(--shadow); height: fit-content; position: sticky; top: 100px; }
+    .summary-items { max-height: 400px; overflow-y: auto; margin-bottom: 20px; padding-right: 8px; }
+    .summary-item { display: flex; gap: 16px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-50); }
+    .summary-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .summary-img { width: 64px; height: 64px; border-radius: 10px; object-fit: cover; background: var(--gray-50); border: 1px solid var(--gray-100); }
+    .summary-details { flex: 1; }
+    .summary-name { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+    .summary-opt { font-size: 12px; color: var(--gray-500); margin-bottom: 6px; }
+    .summary-price { font-weight: 700; font-family: var(--font-display); font-size: 14px; }
+    
+    .summary-totals { border-top: 1px solid var(--gray-100); padding-top: 20px; margin-top: 20px; }
+    .tot-row { display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 15px; color: var(--gray-600); }
+    .tot-row.final { font-size: 20px; font-weight: 800; color: var(--black); margin-top: 16px; padding-top: 16px; border-top: 1px dashed var(--gray-200); }
+    
+    .payment-methods { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; }
+    .pay-btn { display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; padding: 16px; border-radius: 12px; font-weight: 600; cursor: pointer; transition: all 0.2s; border: none; font-size: 16px; }
+    .pay-stripe { background: #635bff; color: #fff; }
+    .pay-stripe:hover { background: #4b45c6; }
+    .pay-paypal { background: #ffc439; color: #000; }
+    .pay-paypal:hover { background: #f2b82e; }
+    
+    .back-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--gray-500); text-decoration: none; margin-bottom: 24px; transition: color 0.2s; }
+    .back-link:hover { color: var(--black); }
+
+    .empty-checkout { display: none; text-align: center; padding: 40px; background: var(--white); border-radius: 24px; box-shadow: var(--shadow); grid-column: 1 / -1; }
+
+    @media (max-width: 900px) {
+      .checkout-page { grid-template-columns: 1fr; }
+      .order-summary { position: relative; top: 0; }
+    }
+  </style>
+</head>
+<body>
+<nav id="navbar" class="navbar scrolled">
+  <div class="nav-inner">
+    <a href="index.html" class="logo-link">
+      <div class="logo-wrap">
+        <img src="LOOG.jpeg" alt="3DSPARK" class="logo-img" />
+      </div>
+      <span class="logo-text">3D<span class="logo-spark" style="color:var(--accent-warm)">SPARK</span></span>
+    </a>
+  </div>
+</nav>
+
+<div class="checkout-page" id="checkout-container">
+  <div class="checkout-left">
+    <a href="index.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Torna al catalogo
+    </a>
+    <h1 class="checkout-title">Completamento Ordine</h1>
+    
+    <div class="checkout-form">
+      <h2 class="form-section-title">Dati di Spedizione</h2>
+      <div class="form-row" style="margin-bottom: 16px;">
+        <div class="form-group"><label>Nome</label><input type="text" placeholder="Mario" required /></div>
+        <div class="form-group"><label>Cognome</label><input type="text" placeholder="Rossi" required /></div>
+      </div>
+      <div class="form-group" style="margin-bottom: 16px;"><label>Email</label><input type="email" placeholder="mario.rossi@email.com" required /></div>
+      <div class="form-group" style="margin-bottom: 16px;"><label>Indirizzo</label><input type="text" placeholder="Via Roma 123" required /></div>
+      <div class="form-row" style="margin-bottom: 16px;">
+        <div class="form-group"><label>Citt&#224;</label><input type="text" placeholder="Milano" required /></div>
+        <div class="form-group"><label>CAP</label><input type="text" placeholder="20100" required /></div>
+      </div>
+      <div class="form-group"><label>Note per il corriere (Opzionale)</label><textarea rows="2" placeholder="Es. Citofono Rossi..."></textarea></div>
+    </div>
+  </div>
+  
+  <div class="checkout-right">
+    <div class="order-summary">
+      <h2 class="form-section-title">Riepilogo</h2>
+      
+      <div class="summary-items" id="chk-items">
+        <!-- Rendered via JS -->
+      </div>
+      
+      <div class="summary-totals">
+        <div class="tot-row">
+          <span>Subtotale</span>
+          <span id="chk-sub">0,00 &#8364;</span>
+        </div>
+        <div class="tot-row">
+          <span>Spedizione</span>
+          <span>5,90 &#8364;</span>
+        </div>
+        <div class="tot-row final">
+          <span>Totale</span>
+          <span id="chk-tot">0,00 &#8364;</span>
+        </div>
+      </div>
+      
+      <div class="payment-methods">
+        <button class="pay-btn pay-stripe">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          Paga con Carta
+        </button>
+        <button class="pay-btn pay-paypal">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 3.72a1.27 1.27 0 0 1 1.253-1.052h7.575c3.226 0 5.434.858 6.4 2.502 1.132 1.93.923 5.163-1.636 8.544-1.921 2.544-4.57 3.553-7.533 3.553h-1.65l-1.025 6.55a.642.642 0 0 1-.633.541h-1.12z"/></svg>
+          PayPal
+        </button>
+      </div>
+      
+      <p style="font-size:12px; color:var(--gray-400); text-align:center; margin-top:20px;">
+        Pagamento sicuro e crittografato.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="empty-checkout" id="empty-state">
+  <h2 style="font-family:var(--font-display); font-size:24px; margin-bottom:16px;">Il tuo carrello è vuoto</h2>
+  <p style="color:var(--gray-500); margin-bottom:24px;">Aggiungi qualche prodotto al carrello per poter procedere al checkout.</p>
+  <a href="index.html" class="btn-primary" style="background:var(--black); color:#fff; display:inline-flex;">Torna allo shop</a>
+</div>
+
+<script>
+function formatPrice(num) {
+  return parseFloat(num).toFixed(2).replace('.', ',') + ' €';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cart = JSON.parse(localStorage.getItem('3dspark_cart')) || [];
+  
+  if(cart.length === 0) {
+    document.getElementById('checkout-container').style.display = 'none';
+    document.getElementById('empty-state').style.display = 'block';
+    return;
+  }
+  
+  const itemsContainer = document.getElementById('chk-items');
+  let subtot = 0;
+  
+  itemsContainer.innerHTML = cart.map((item) => {
+    let optText = item.optionLabel;
+    if (item.nfc) optText += ' + Chip NFC';
+    const itemTotal = parseFloat(item.price) * item.qty;
+    subtot += itemTotal;
+    
+    return `
+      <div class="summary-item">
+        <img src="${item.img}" alt="${item.name}" class="summary-img" />
+        <div class="summary-details">
+          <div class="summary-name">${item.name} <span style="font-weight:400; color:gray">x${item.qty}</span></div>
+          <div class="summary-opt">${optText}</div>
+          <div class="summary-price">${formatPrice(itemTotal)}</div>
+        </div>
+      </div>
+    `;
+  }).join('');
+  
+  document.getElementById('chk-sub').textContent = formatPrice(subtot);
+  document.getElementById('chk-tot').textContent = formatPrice(subtot + 5.90);
+});
+</script>
+</body>
+</html>
