@@ -169,6 +169,49 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('chk-sub').textContent = formatPrice(subtot);
   document.getElementById('chk-tot').textContent = formatPrice(subtot + 5.90);
 });
+
+// ─── ADD BETA MARK TO ALL IMAGES ───
+function addBetaMarks() {
+  document.querySelectorAll('img:not(.logo-img):not(.beta-marked)').forEach(img => {
+    img.classList.add('beta-marked');
+    
+    // Create wrapper
+    const wrapper = document.createElement('div');
+    wrapper.className = 'beta-mark-wrapper';
+    
+    // Get computed styles that we might need to carry over (like object-fit)
+    // Actually, setting width/height 100% in CSS handles most cases.
+    
+    // Replace img with wrapper and put img inside
+    img.parentNode.insertBefore(wrapper, img);
+    wrapper.appendChild(img);
+    
+    // Add beta mark
+    const mark = document.createElement('div');
+    mark.className = 'beta-mark';
+    mark.textContent = 'IN BETA';
+    wrapper.appendChild(mark);
+  });
+}
+
+// Run immediately and observe DOM changes
+if(document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', addBetaMarks);
+} else {
+    addBetaMarks();
+}
+const observer = new MutationObserver((mutations) => {
+    let shouldRun = false;
+    for(let m of mutations) {
+        if(m.addedNodes.length > 0) {
+            shouldRun = true;
+            break;
+        }
+    }
+    if(shouldRun) addBetaMarks();
+});
+observer.observe(document.body, { childList: true, subtree: true });
+
 </script>
 </body>
 </html>
