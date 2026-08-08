@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>3DSPARK &#8211; Stampa 3D Artigianale di Qualit&#224;</title>
-  <meta name="description" content="3DSPARK crea oggetti unici in stampa 3D: Funko Pop in PLA Wood, lampade lithophane, smart card NFC, portachiavi personalizzati. Made in Italy." />
+  <meta name="description" content="3DSPARK crea lampade d&#8217;arredo e lithophane uniche in stampa 3D. Made in Italy." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -55,7 +55,7 @@
   <div class="hero-content">
     <div class="hero-badge"><span class="badge-dot"></span>Stampa 3D Artigianale &#8212; Made in Italy</div>
     <h1 class="hero-title">Dall&#8217;idea<br /><span class="hero-accent">all&#8217;oggetto.</span></h1>
-    <p class="hero-sub">Creiamo oggetti unici in stampa 3D: Funko Pop in PLA Wood, lampade lithophane, smart card NFC e molto altro. Ogni pezzo realizzato con cura, strato dopo strato.</p>
+    <p class="hero-sub">Creiamo lampade d&#8217;arredo e lithophane uniche in stampa 3D. Ogni pezzo realizzato con cura, strato dopo strato per donare luce e atmosfera alla tua casa.</p>
     <div class="hero-actions">
       <a href="#products" class="btn-primary"><span>Esplora i prodotti</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       <a href="#contact" class="btn-ghost">Richiedi preventivo</a>
@@ -70,11 +70,11 @@
   </div>
   <div class="hero-visual">
     <div class="hero-img-frame">
-      <img src="extracted/3D_printed_Funko_Pop_figure_202607111258.jpeg" alt="Funko Pop 3D in PLA Wood" class="hero-img" />
+      <img src="extracted/3D_printed_lamp_on_tripod_202607111258.jpeg" alt="Lampada 3D su Treppiede" class="hero-img" />
       <div class="hero-img-glow"></div>
     </div>
     <div class="hero-floating-badge badge-tr">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>PLA Wood
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Lampade LED
     </div>
     <div class="hero-floating-badge badge-bl">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Consegna rapida
@@ -102,9 +102,9 @@
       </div>
       <div class="about-right reveal">
         <div class="about-img-mosaic">
-          <div class="mosaic-img mosaic-a"><img src="extracted/3D_printed_Groot_figure_wood_202607111258.jpeg" alt="Groot PLA Wood" /></div>
-          <div class="mosaic-img mosaic-b"><img src="extracted/3D_printed_astronaut_figure_bamboo_202607111258.jpeg" alt="Astronauta bamboo" /></div>
-          <div class="mosaic-img mosaic-c"><img src="extracted/Funko_Pop_Batman_wood_figure_202607111258.jpeg" alt="Batman Funko Pop" /></div>
+          <div class="mosaic-img mosaic-a"><img src="extracted/3D_printed_lithophane_lamp_moon_202607111258.jpeg" alt="Lampada Luna Lithophane" /></div>
+          <div class="mosaic-img mosaic-b"><img src="extracted/3D_printed_lamp_on_tripod_202607111258.jpeg" alt="Lampada Treppiede" /></div>
+          <div class="mosaic-img mosaic-c"><img src="extracted/Lithophane_lamp_with_dog_portrait_202607111258.jpeg" alt="Lithophane Ritratto" /></div>
         </div>
       </div>
     </div>
@@ -122,92 +122,36 @@
   <div class="container">
     <div class="section-header reveal">
       <div class="section-label">Catalogo</div>
-      <h2 class="section-title">I nostri prodotti</h2>
+      <h2 class="section-title">Le nostre lampade</h2>
       <p class="section-sub">Clicca su ogni prodotto per vedere info, materiale e prezzi.</p>
-    </div>
-    <div class="filter-tabs">
-      <button class="filter-btn active" data-filter="figure">Figure &amp; Funko</button>
-      <button class="filter-btn" data-filter="lampade">Lampade</button>
-      <button class="filter-btn" data-filter="card">Smart Card NFC</button>
-      <button class="filter-btn" data-filter="portachiavi">Portachiavi</button>
-      <button class="filter-btn" data-filter="custom">Custom</button>
-      <button class="filter-btn" data-filter="all">Tutti</button>
     </div>
     <div class="products-grid" id="products-grid"></div>
   </div>
 </section>
 
-<!-- ═══ PROMO SMART CARD / PORTACHIAVI ═══ -->
-<section class="promo-section section-padding">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-label">Offerte speciali</div>
-      <h2 class="section-title">Promo Smart Card &amp; Portachiavi</h2>
-      <p class="section-sub">Ordina di pi&#249; e risparmia. Mix di modelli consentito.</p>
-    </div>
-    <div class="promo-grid">
-      <div class="promo-card reveal">
-        <div class="promo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div>
-        <div class="promo-qty">1 pezzo</div>
-        <div class="promo-price">5,99 &#8364;</div>
-        <div class="promo-label">Prezzo unitario</div>
-      </div>
-      <div class="promo-card promo-featured reveal">
-        <div class="promo-best">Popolare</div>
-        <div class="promo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div>
-        <div class="promo-qty">3 pezzi</div>
-        <div class="promo-price">14,99 &#8364;</div>
-        <div class="promo-label">Risparmi 2,98 &#8364;</div>
-        <div class="promo-saving">&#8722;17%</div>
-      </div>
-      <div class="promo-card promo-top reveal">
-        <div class="promo-best">Miglior valore</div>
-        <div class="promo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div>
-        <div class="promo-qty">5 pezzi</div>
-        <div class="promo-price">22,99 &#8364;</div>
-        <div class="promo-label">Risparmi 6,96 &#8364;</div>
-        <div class="promo-saving">&#8722;23%</div>
-      </div>
-    </div>
-    <p class="promo-note">*Valido per Smart Card NFC e Portachiavi. Mix di modelli disponibile. Contattaci per ordini superiori a 5 pezzi.</p>
-  </div>
-</section>
-
-<!-- ═══ FUNKO SPOTLIGHT ═══ -->
+<!-- ═══ LAMP SPOTLIGHT ═══ -->
 <section class="funko-spotlight section-padding">
   <div class="container">
     <div class="spotlight-inner">
       <div class="spotlight-text reveal">
         <div class="section-label">In evidenza</div>
-        <h2 class="section-title">Funko Pop<br /><span class="accent-line">in PLA Wood</span></h2>
-        <p class="spotlight-desc">I nostri Funko Pop sono realizzati <strong>interamente in PLA Wood</strong> &#8212; un filamento composito che mescola PLA e fibre di legno naturale. Il risultato &#232; una superficie calda con venature uniche che rende ogni pezzo diverso dall&#8217;altro.</p>
+        <h2 class="section-title">Lampade Lithophane<br /><span class="accent-line">Luce &amp; Emozione</span></h2>
+        <p class="spotlight-desc">Le nostre lampade lithophane trasformano le tue foto e immagini preferite in <strong>suggestive sculture di luce</strong>. Spente appaiono come eleganti superfici bianche, accese rivelano dettagli straordinari e profondità uniche.</p>
         <ul class="spotlight-features">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Materiale: <strong>100% PLA Wood</strong></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Effetto legno naturale con venature uniche</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Qualsiasi personaggio su richiesta</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Ogni pezzo &#232; un esemplare unico</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Materiale: <strong>PLA Bianco Traslucido Premium</strong></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Effetto Lithophane ad alta definizione</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Personalizzabile con le tue foto preferite</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Base d'arredo inclusa</li>
         </ul>
-        <div class="funko-pricing reveal">
-          <div class="funko-price-card">
-            <span class="fp-size">16 &#215; 16 cm</span>
-            <span class="fp-price">15,99 &#8364;</span>
-          </div>
-          <div class="funko-price-divider"></div>
-          <div class="funko-price-card funko-price-big">
-            <span class="fp-badge">MAX</span>
-            <span class="fp-size">25 &#215; 25 cm</span>
-            <span class="fp-price">20,99 &#8364;</span>
-          </div>
-        </div>
-        <a href="#products" class="btn-primary" onclick="document.querySelector('[data-filter=figure]').click()"><span>Vedi tutti i modelli</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="#products" class="btn-primary"><span>Vedi tutte le lampade</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       </div>
       <div class="spotlight-imgs reveal">
-        <div class="spotlight-img-main"><img src="extracted/Funko_Pop_Batman_wood_figure_202607111258.jpeg" alt="Funko Pop Batman PLA Wood" /></div>
+        <div class="spotlight-img-main"><img src="extracted/3D_printed_lithophane_lamp_moon_202607111258.jpeg" alt="Lampada Lithophane Luna" /></div>
         <div class="spotlight-img-grid">
-          <img src="extracted/3D_printed_Funko_Pop_figure_202607111258_2.jpeg" alt="Funko Pop" />
-          <img src="extracted/3D_printed_Spider-Man_Funko_Pop_202607111258.jpeg" alt="Spider-Man" />
-          <img src="extracted/Funko_Pop_detective_wood_figure_202607111258.jpeg" alt="Detective" />
-          <img src="extracted/3D_printed_Funko_Pop_figure_202607111258.jpeg" alt="Vintage" />
+          <img src="extracted/LED_light_bulb_and_moon_202607111258.jpeg" alt="Luna 3D LED" />
+          <img src="extracted/3D_printed_lamp_on_tripod_202607111258.jpeg" alt="Lampada Treppiede" />
+          <img src="extracted/Lithophane_lamp_with_dog_portrait_202607111258.jpeg" alt="Lithophane Ritratto" />
+          <img src="extracted/LED_light_bulb_and_lithophane_202607111258.jpeg" alt="Lithophane Edison" />
         </div>
       </div>
     </div>
@@ -275,15 +219,12 @@
           <label for="fproduct">Prodotto di interesse</label>
           <select id="fproduct" name="product">
             <option value="">Seleziona...</option>
-            <option>Funko Pop (16&#215;16 cm) &#8211; 15,99 &#8364;</option>
-            <option>Funko Pop (25&#215;25 cm) &#8211; 20,99 &#8364;</option>
-            <option>Figura 3D personalizzata</option>
-            <option>Lampada Lithophane &#8211; 19,99 &#8364;</option>
-            <option>Smart Card NFC &#8211; 5,99 &#8364;</option>
-            <option>Portachiavi &#8211; 5,99 &#8364;</option>
-            <option>Promo 3 pz &#8211; 14,99 &#8364;</option>
-            <option>Promo 5 pz &#8211; 22,99 &#8364;</option>
-            <option>Stampa custom (preventivo)</option>
+            <option>Lytolamp Premium &#8211; 49,99 &#8364;</option>
+            <option>Lampada Lithophane Luna &#8211; 19,99 &#8364;</option>
+            <option>Lampada su Treppiede &#8211; 19,99 &#8364;</option>
+            <option>Lithophane Ritratto Personalizzata &#8211; 19,99 &#8364;</option>
+            <option>Lithophane con LED Edison &#8211; 19,99 &#8364;</option>
+            <option>Lampada Custom su Misura (preventivo)</option>
             <option>Altro</option>
           </select>
         </div>

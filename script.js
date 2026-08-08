@@ -10,7 +10,7 @@ const PRODUCTS = [
     ],
     "name": "Lytolamp",
     "short": "Design magnetico senza viti. Luce calda e avvolgente.",
-    "long": "Lytolamp è una lampada dal design elegante e pulito, priva di viti a vista grazie all'esclusivo sistema di assemblaggio magnetico (magneti al neodimio da 8x2 mm). Il corpo diffonde la luce in modo caldo e accogliente, contrastato modernamente dalla cornice opaca in PETG. Sistema di illuminazione interno a LED (10kWh) ad alta intensità per una diffusione omogenea.",
+    "long": "Lytolamp è una lampada dal design elegante e pulito, priva di viti a vista grazie all'esclusivo sistema di assemblaggio magnetico (magneti al neodimio da 8x2 mm). Il corpo diffonde la luce in modo caldo e accogliente, contrastato modernamente dalla cornice opaca in PETG. Sistema di illuminazione interno a LED ad alta intensità per una diffusione omogenea.",
     "material": "Corpo Principale e Coperchio: PLA Wood Premium. Cornice (Lid Frame): PETG Matte Black. Il mix di texture naturali e finitura opaca moderna rende il pezzo unico.",
     "options": [
       {
@@ -22,221 +22,6 @@ const PRODUCTS = [
     ],
     "badge_class": "badge-premium",
     "badge_txt": "Top Seller",
-    "is_custom": false
-  },
-  {
-    "id": "fp-classic",
-    "cat": "figure",
-    "img": "extracted/3D_printed_Funko_Pop_figure_202607111258.jpeg",
-    "thumbs": [
-      "extracted/3D_printed_Funko_Pop_figure_202607111258_2.jpeg",
-      "extracted/Funko_Pop_Batman_wood_figure_202607111258.jpeg",
-      "extracted/3D_printed_Spider-Man_Funko_Pop_202607111258.jpeg"
-    ],
-    "name": "Funko Pop Personalizzato",
-    "short": "Realizzato interamente in PLA Wood. Scegli il personaggio.",
-    "long": "I nostri Funko Pop sono stampati in 100% PLA Wood, un filamento composito che mescola PLA e fibre di legno naturale. Il risultato è una superficie calda con venature uniche che rende ogni pezzo un esemplare irripetibile. Qualsiasi personaggio su richiesta: film, serie TV, anime, sport, persone reali.",
-    "material": "PLA Wood — filamento composito con fibre di legno reale. Finitura naturale sabbiata. Colore naturale del legno con venature.",
-    "options": [
-      {
-        "id": "fp-16",
-        "label": "16 × 16 cm",
-        "price": "15.99",
-        "note": "Taglia standard"
-      },
-      {
-        "id": "fp-25",
-        "label": "25 × 25 cm",
-        "price": "20.99",
-        "note": "Taglia MAX — più dettaglio"
-      }
-    ],
-    "badge_class": "badge-wood",
-    "badge_txt": "PLA Wood",
-    "is_custom": false
-  },
-  {
-    "id": "fp-spider",
-    "cat": "figure",
-    "img": "extracted/3D_printed_Spider-Man_Funko_Pop_202607111258.jpeg",
-    "thumbs": [
-      "extracted/Funko_Pop_Batman_wood_figure_202607111258.jpeg",
-      "extracted/Funko_Pop_detective_wood_figure_202607111258.jpeg"
-    ],
-    "name": "Funko Pop Spider-Man",
-    "short": "Il tuo supereroe preferito in PLA Wood. Pezzo unico.",
-    "long": "Spider-Man in versione Funko Pop, stampato in PLA Wood con venature naturali. Ogni pezzo è unico grazie alla texture organica del filamento. Disponibile nelle due taglie standard.",
-    "material": "PLA Wood — filamento composito con fibre di legno. Finitura naturale, colore caldo del legno.",
-    "options": [
-      {
-        "id": "fp-spider-16",
-        "label": "16 × 16 cm",
-        "price": "15.99",
-        "note": "Taglia standard"
-      },
-      {
-        "id": "fp-spider-25",
-        "label": "25 × 25 cm",
-        "price": "20.99",
-        "note": "Taglia MAX"
-      }
-    ],
-    "badge_class": "badge-wood",
-    "badge_txt": "Marvel",
-    "is_custom": false
-  },
-  {
-    "id": "fp-batman",
-    "cat": "figure",
-    "img": "extracted/Funko_Pop_Batman_wood_figure_202607111258.jpeg",
-    "thumbs": [
-      "extracted/3D_printed_Funko_Pop_figure_202607111258.jpeg",
-      "extracted/Funko_Pop_detective_wood_figure_202607111258.jpeg"
-    ],
-    "name": "Funko Pop Batman",
-    "short": "Il Cavaliere Oscuro in PLA Wood. Da collezione.",
-    "long": "Batman in versione Funko Pop realizzato in PLA Wood. La texture del filamento richiama l'aspetto rugoso e oscuro del personaggio, rendendo questo oggetto un pezzo di design unico. Ideale come regalo o da esporre.",
-    "material": "PLA Wood — filamento composito con fibre di legno. Finitura naturale sabbiata.",
-    "options": [
-      {
-        "id": "fp-bat-16",
-        "label": "16 × 16 cm",
-        "price": "15.99",
-        "note": "Taglia standard"
-      },
-      {
-        "id": "fp-bat-25",
-        "label": "25 × 25 cm",
-        "price": "20.99",
-        "note": "Taglia MAX"
-      }
-    ],
-    "badge_class": "badge-wood",
-    "badge_txt": "DC Comics",
-    "is_custom": false
-  },
-  {
-    "id": "fp-detective",
-    "cat": "figure",
-    "img": "extracted/Funko_Pop_detective_wood_figure_202607111258.jpeg",
-    "thumbs": [
-      "extracted/3D_printed_Funko_Pop_figure_202607111258.jpeg"
-    ],
-    "name": "Funko Pop Detective",
-    "short": "Stile retro in PLA Wood. Atmosfera vintage unica.",
-    "long": "Funko Pop in stile detective noir, perfetto per gli amanti del genere poliziesco retro. Stampato in PLA Wood per un'atmosfera vintage e artigianale. Ottimo anche come regalo originale.",
-    "material": "PLA Wood — filamento composito con fibre di legno. Venature uniche su ogni pezzo.",
-    "options": [
-      {
-        "id": "fp-det-16",
-        "label": "16 × 16 cm",
-        "price": "15.99",
-        "note": "Taglia standard"
-      },
-      {
-        "id": "fp-det-25",
-        "label": "25 × 25 cm",
-        "price": "20.99",
-        "note": "Taglia MAX"
-      }
-    ],
-    "badge_class": "badge-wood",
-    "badge_txt": "Vintage",
-    "is_custom": false
-  },
-  {
-    "id": "fig-groot",
-    "cat": "figure",
-    "img": "extracted/3D_printed_Groot_figure_wood_202607111258.jpeg",
-    "thumbs": [
-      "extracted/3D_printed_Darth_Vader_figure_202607111258.jpeg",
-      "extracted/3D_printed_astronaut_figure_bamboo_202607111258.jpeg"
-    ],
-    "name": "Groot — Figura PLA Wood",
-    "short": "La natura di Groot esaltata dal filamento legno.",
-    "long": "Groot è il personaggio perfetto per il PLA Wood: la sua corteccia naturale viene resa alla perfezione dalla texture organica del filamento. Una figura decorativa di grande impatto, ideale da esporre o regalare.",
-    "material": "PLA Wood — filamento composito legno+PLA. Superficie naturale con venature. Colore miele/rovere chiaro.",
-    "options": [
-      {
-        "id": "fig-groot-16",
-        "label": "16 × 16 cm",
-        "price": "15.99",
-        "note": "Taglia standard"
-      },
-      {
-        "id": "fig-groot-25",
-        "label": "25 × 25 cm",
-        "price": "20.99",
-        "note": "Taglia MAX"
-      }
-    ],
-    "badge_class": "badge-premium",
-    "badge_txt": "Marvel",
-    "is_custom": false
-  },
-  {
-    "id": "fig-vader",
-    "cat": "figure",
-    "img": "extracted/3D_printed_Darth_Vader_figure_202607111258.jpeg",
-    "thumbs": [
-      "extracted/3D_printed_Groot_figure_wood_202607111258.jpeg",
-      "extracted/3D_printed_astronaut_figure_bamboo_202607111258.jpeg"
-    ],
-    "name": "Darth Vader — Figura 3D",
-    "short": "Figura dettagliata in PLA. Perfetta per gli appassionati.",
-    "long": "Darth Vader stampato con livello di dettaglio elevato in PLA Standard. Ogni linea del costume iconico viene resa con precisione. Disponibile anche in PLA Wood per un effetto più artigianale e caldo.",
-    "material": "PLA Standard (nero opaco) oppure PLA Wood su richiesta.",
-    "options": [
-      {
-        "id": "fig-vader-std-16",
-        "label": "PLA Standard — 16 × 16 cm",
-        "price": "15.99",
-        "note": "Nero opaco"
-      },
-      {
-        "id": "fig-vader-std-25",
-        "label": "PLA Standard — 25 × 25 cm",
-        "price": "20.99",
-        "note": "Taglia MAX"
-      },
-      {
-        "id": "fig-vader-wood-16",
-        "label": "PLA Wood — 16 × 16 cm",
-        "price": "15.99",
-        "note": "Effetto legno"
-      }
-    ],
-    "badge_class": "badge-premium",
-    "badge_txt": "Star Wars",
-    "is_custom": false
-  },
-  {
-    "id": "fig-astronaut",
-    "cat": "figure",
-    "img": "extracted/3D_printed_astronaut_figure_bamboo_202607111258.jpeg",
-    "thumbs": [
-      "extracted/3D_printed_Groot_figure_wood_202607111258.jpeg"
-    ],
-    "name": "Astronauta — Bamboo",
-    "short": "Filamento bamboo sostenibile. Design minimalista.",
-    "long": "Figura astronauta realizzata in filamento bamboo — materiale eco-friendly con texture granulosa naturale. Un pezzo di design contemporaneo, perfetto per scrivania o mensola. Sostenibile al 100%.",
-    "material": "Filamento Bamboo — PLA misto fibre di bamboo. Colore naturale beige/sabbia. Eco-friendly.",
-    "options": [
-      {
-        "id": "fig-astro-16",
-        "label": "16 × 16 cm",
-        "price": "15.99",
-        "note": "Bamboo naturale"
-      },
-      {
-        "id": "fig-astro-25",
-        "label": "25 × 25 cm",
-        "price": "20.99",
-        "note": "Taglia MAX"
-      }
-    ],
-    "badge_class": "badge-eco",
-    "badge_txt": "Bamboo",
     "is_custom": false
   },
   {
@@ -340,110 +125,6 @@ const PRODUCTS = [
     "badge_class": "badge-glow",
     "badge_txt": "Edison",
     "is_custom": false
-  },
-  {
-    "id": "card-wood",
-    "cat": "card",
-    "img": "extracted/3D_printed_NFC_card_wood_202607111258.jpeg",
-    "thumbs": [
-      "extracted/3D_printed_smart_card_bamboo_202607111258.jpeg",
-      "extracted/3D_printed_card_on_mirror_202607111258.jpeg"
-    ],
-    "name": "Smart Card NFC",
-    "short": "Condividi contatti, social o sito con un tocco. In PLA Wood.",
-    "long": "La Smart Card NFC è la tua biglietto da visita del futuro: avvicini il telefono e in un secondo condividi il tuo profilo Instagram, numero di telefono, sito web o qualsiasi link. Nessuna app necessaria. Funziona con qualsiasi smartphone Android e iOS (NFC attivato). Programmabile e riprogrammabile.",
-    "material": "PLA Wood (finitura legno) oppure Bamboo oppure Mirror (finitura lucida). Chip NFC integrato NTAG213 — compatibile universale.",
-    "options": [
-      {
-        "id": "card-wood",
-        "label": "PLA Wood",
-        "price": "5.99",
-        "note": "Finitura legno naturale"
-      },
-      {
-        "id": "card-bamboo",
-        "label": "Bamboo",
-        "price": "5.99",
-        "note": "Eco-friendly, colore naturale"
-      },
-      {
-        "id": "card-mirror",
-        "label": "Mirror Edition",
-        "price": "5.99",
-        "note": "Finitura lucida premium"
-      },
-      {
-        "id": "card-tag",
-        "label": "Smart Tag NFC (da applicare)",
-        "price": "5.99",
-        "note": "Adesivo — da incollare ovunque"
-      }
-    ],
-    "badge_class": "badge-tech",
-    "badge_txt": "NFC",
-    "is_custom": false,
-    "force_nfc": true
-  },
-  {
-    "id": "key-wood",
-    "cat": "portachiavi",
-    "img": "extracted/3D_printed_keychain_wood_filament_202607111258.jpeg",
-    "thumbs": [
-      "extracted/3D_printed_keychain_dark_oak_202607111258.jpeg"
-    ],
-    "name": "Portachiavi 3D",
-    "short": "Personalizzato con nome, logo o forma. In PLA Wood.",
-    "long": "Portachiavi realizzato in stampa 3D con filamento PLA Wood o Dark Oak. Scegli la forma, aggiungi un nome, iniziali o logo. Ogni portachiavi viene stampato su richiesta — nessuno è identico all'altro grazie alle venature naturali del filamento. Ottimo come regalo personalizzato o gadget aziendale.",
-    "material": "PLA Wood (caldo, venature naturali) oppure Dark Oak (tono scuro, pregiato). Anellino metallico incluso.",
-    "options": [
-      {
-        "id": "key-wood",
-        "label": "PLA Wood",
-        "price": "5.99",
-        "note": "Colore legno chiaro naturale"
-      },
-      {
-        "id": "key-oak",
-        "label": "Dark Oak",
-        "price": "5.99",
-        "note": "Tono scuro, effetto rovere pregiato"
-      }
-    ],
-    "badge_class": "badge-wood",
-    "badge_txt": "PLA Wood",
-    "is_custom": false
-  },
-  {
-    "id": "custom-1",
-    "cat": "custom",
-    "img": "extracted/image.png_202607111258_3.jpeg",
-    "thumbs": [
-      "extracted/image.png_202607111258_5.jpeg"
-    ],
-    "name": "Stampa Custom",
-    "short": "Hai un'idea? La realizziamo. Qualsiasi oggetto su misura.",
-    "long": "Porta il tuo file STL/OBJ oppure descrivi l'oggetto che hai in mente: noi lo stampiamo. Gestiamo tutta la filiera: dalla modellazione 3D (se non hai il file), alla scelta del materiale, alla stampa e al post-processing. Consulenza gratuita iniziale. Preventivo senza impegno.",
-    "material": "Qualsiasi materiale disponibile: PLA, PLA Wood, Bamboo, PETG, TPU, Resina. Colori personalizzabili.",
-    "options": [],
-    "badge_class": "badge-premium",
-    "badge_txt": "Custom",
-    "is_custom": true
-  },
-  {
-    "id": "custom-2",
-    "cat": "custom",
-    "img": "extracted/image.png_202607111258_5.jpeg",
-    "thumbs": [
-      "extracted/image.png_202607111258_3.jpeg"
-    ],
-    "name": "Modello 3D + Stampa",
-    "short": "Dal concept al prodotto finito. Modellazione inclusa.",
-    "long": "Non hai il file 3D? Nessun problema. Il nostro team crea il modello partendo da un disegno, una foto o una descrizione. Una volta approvato il modello, procediamo con la stampa nel materiale e nei colori scelti. Servizio end-to-end con anteprima digitale inclusa.",
-    "material": "Modellazione 3D + stampa. Materiale e colori a scelta. Anteprima digitale inclusa prima della stampa.",
-    "options": [],
-    "badge_class": "badge-premium",
-    "badge_txt": "Full Service",
-    "is_custom": true
   }
 ];
 
@@ -461,9 +142,9 @@ function saveCart() {
 }
 
 function addToCart(item) {
-  // item: { id, name, img, optionId, optionLabel, price, nfc }
+  // item: { id, name, img, optionId, optionLabel, price }
   // Check if identical item exists
-  const existing = cart.find(c => c.id === item.id && c.optionId === item.optionId && c.nfc === item.nfc);
+  const existing = cart.find(c => c.id === item.id && c.optionId === item.optionId);
   if (existing) {
     existing.qty += 1;
   } else {
@@ -498,7 +179,6 @@ function updateCartUI() {
   } else {
     itemsContainer.innerHTML = cart.map((item, index) => {
       let optText = item.optionLabel;
-      if (item.nfc) optText += ' + Chip NFC';
       
       return `
         <div class="cart-item">
@@ -587,16 +267,11 @@ const modalOverlay = document.getElementById('modal-overlay');
 
 let currentModalProduct = null;
 let currentSelectedOption = null;
-let isNfcSelected = false;
 
 function updateModalDynamicPrice() {
   if (!currentModalProduct || currentModalProduct.is_custom) return;
   
   let basePrice = parseFloat(currentSelectedOption.price);
-  if (isNfcSelected) {
-    basePrice += 1.50;
-  }
-  
   document.getElementById('modal-dynamic-price').textContent = formatPrice(basePrice);
 }
 
@@ -629,7 +304,6 @@ function openModal(id) {
   
   optContainer.innerHTML = '';
   ctaEl.innerHTML = '';
-  isNfcSelected = false;
   
   if (p.is_custom) {
     // Custom product: no cart
@@ -641,10 +315,10 @@ function openModal(id) {
       </a>
     `;
   } else {
-    // Normal product: options + NFC + Cart
+    // Normal product: options + Cart
     currentSelectedOption = p.options[0]; // default first
     
-    // 1. Radio buttons for sizes/options
+    // Radio buttons for sizes/options
     let radioHtml = `<div class="opt-radio-group">`;
     p.options.forEach((opt, idx) => {
       const checked = idx === 0 ? 'checked' : '';
@@ -660,38 +334,6 @@ function openModal(id) {
       `;
     });
     radioHtml += `</div>`;
-    
-    // 2. NFC Toggle (show for all normal products unless force_nfc is true)
-    if (!p.force_nfc) {
-        radioHtml += `
-          <div class="nfc-toggle-wrap" id="nfc-toggle-btn">
-            <div class="nfc-info">
-              <svg class="nfc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 100-20zM12 6v6l4 2"/></svg>
-              <div class="nfc-text">
-                <h4>Aggiungi chip NFC</h4>
-                <p>Rendi il tuo oggetto smart</p>
-              </div>
-            </div>
-            <div style="display:flex; align-items:center; gap:12px;">
-              <span class="nfc-price">+1,50 €</span>
-              <input type="checkbox" id="nfc-checkbox" class="nfc-checkbox" />
-            </div>
-          </div>
-        `;
-    } else {
-        // Product is ALREADY an NFC card/keychain, NFC is included
-        radioHtml += `
-          <div class="nfc-toggle-wrap" style="background:#f0fdf4; border-color:#bbf7d0; cursor:default;">
-            <div class="nfc-info">
-              <svg class="nfc-icon" style="color:#16a34a;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              <div class="nfc-text">
-                <h4 style="color:#166534">Chip NFC Incluso</h4>
-                <p style="color:#22c55e">Già compreso nel prezzo</p>
-              </div>
-            </div>
-          </div>
-        `;
-    }
     
     optContainer.innerHTML = radioHtml;
     
@@ -711,27 +353,9 @@ function openModal(id) {
       });
     });
     
-    // Event listeners for NFC
-    const nfcToggleBtn = document.getElementById('nfc-toggle-btn');
-    const nfcCheckbox = document.getElementById('nfc-checkbox');
-    if (nfcToggleBtn && nfcCheckbox) {
-      nfcToggleBtn.addEventListener('click', (e) => {
-        if(e.target !== nfcCheckbox) {
-           nfcCheckbox.checked = !nfcCheckbox.checked;
-        }
-        isNfcSelected = nfcCheckbox.checked;
-        updateModalDynamicPrice();
-      });
-      nfcCheckbox.addEventListener('change', () => {
-        isNfcSelected = nfcCheckbox.checked;
-        updateModalDynamicPrice();
-      });
-    }
-    
     // Add to cart click
     document.getElementById('modal-add-btn').addEventListener('click', () => {
       let finalPrice = parseFloat(currentSelectedOption.price);
-      if (isNfcSelected) finalPrice += 1.50;
       
       addToCart({
         id: p.id,
@@ -739,8 +363,7 @@ function openModal(id) {
         img: p.img,
         optionId: currentSelectedOption.id,
         optionLabel: currentSelectedOption.label,
-        price: finalPrice.toFixed(2),
-        nfc: isNfcSelected || p.force_nfc
+        price: finalPrice.toFixed(2)
       });
       closeModal();
     });
@@ -820,7 +443,7 @@ function animFollower() {
 }
 animFollower();
 document.addEventListener('mouseover', e => {
-  if (e.target.closest('a, button, .product-card, .filter-btn, .opt-radio-label, .nfc-toggle-wrap')) {
+  if (e.target.closest('a, button, .product-card, .filter-btn, .opt-radio-label')) {
     cursor.classList.add('hover'); follower.classList.add('hover');
   } else {
     cursor.classList.remove('hover'); follower.classList.remove('hover');
@@ -902,44 +525,4 @@ function handleForm(e) {
   }, 1200);
 }
 
-// ─── ADD BETA MARK TO ALL IMAGES ───
-function addBetaMarks() {
-  document.querySelectorAll('img:not(.logo-img):not(.beta-marked)').forEach(img => {
-    img.classList.add('beta-marked');
-    
-    // Create wrapper
-    const wrapper = document.createElement('div');
-    wrapper.className = 'beta-mark-wrapper';
-    
-    // Get computed styles that we might need to carry over (like object-fit)
-    // Actually, setting width/height 100% in CSS handles most cases.
-    
-    // Replace img with wrapper and put img inside
-    img.parentNode.insertBefore(wrapper, img);
-    wrapper.appendChild(img);
-    
-    // Add beta mark
-    const mark = document.createElement('div');
-    mark.className = 'beta-mark';
-    mark.textContent = 'IN BETA';
-    wrapper.appendChild(mark);
-  });
-}
 
-// Run immediately and observe DOM changes
-if(document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', addBetaMarks);
-} else {
-    addBetaMarks();
-}
-const observer = new MutationObserver((mutations) => {
-    let shouldRun = false;
-    for(let m of mutations) {
-        if(m.addedNodes.length > 0) {
-            shouldRun = true;
-            break;
-        }
-    }
-    if(shouldRun) addBetaMarks();
-});
-observer.observe(document.body, { childList: true, subtree: true });
